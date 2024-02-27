@@ -27,6 +27,14 @@ public class CharacterMoveSpeed : MonoBehaviour
     void Update()
     {
         animator.SetFloat("speed", Math.Abs(rb.velocity.x));
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            animator.transform.localScale = new Vector3(1, 1, 1);
+        }
         if (
             Math.Abs(rb.velocity.magnitude) < maxSpeed &&
             Math.Abs(Input.GetAxis("Horizontal")) >= 0)
