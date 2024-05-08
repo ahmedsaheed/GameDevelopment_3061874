@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4552452566716321678}
   - component: {fileID: 907960078092084039}
   m_Layer: 0
-  m_Name: BananaPickup 1
+  m_Name: BananaPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 1
   gameManagerScript: {fileID: 0}
-  pickupEffect: {fileID: 0}
+  pickupEffect: {fileID: 3547176832304412658, guid: f852ae04831bb4377bbd6bf5f661c261, type: 3}
 --- !u!58 &6810486093940924852
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PickupScript : MonoBehaviour
     
     public float scoreValue;
     public GameManager gameManagerScript;
-    public GameObject pickupEffect;    
+    [SerializeField] public GameObject pickupEffect;    
     // Start is called before the first frame update
     void Start()
     {

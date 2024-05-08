@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6302837917819636923
+--- !u!1 &7776984937495322682
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2821443168527781585}
-  - component: {fileID: 6957674413981375994}
-  - component: {fileID: 4408221136757251894}
-  - component: {fileID: 3914689980723617334}
-  - component: {fileID: 4510572379458276388}
-  - component: {fileID: 8293773558328539424}
+  - component: {fileID: 3502118282706426059}
+  - component: {fileID: 7658224613533925108}
+  - component: {fileID: 7141929066468191821}
+  - component: {fileID: 2890458884735156963}
+  - component: {fileID: 2071667393207820951}
+  - component: {fileID: 6337140999519160814}
   m_Layer: 0
   m_Name: StrawberryPickup
   m_TagString: Untagged
@@ -21,28 +21,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2821443168527781585
+--- !u!4 &3502118282706426059
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.635949, y: 10.90987, z: 0}
-  m_LocalScale: {x: 1.1503, y: 1.1503, z: 1.1503}
+  m_LocalPosition: {x: -12.258505, y: 10.511641, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6957674413981375994
+--- !u!212 &7658224613533925108
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -88,28 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4408221136757251894
+--- !u!114 &7141929066468191821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75041d077844bcf85712433823e057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
+  scoreValue: 5
   gameManagerScript: {fileID: 0}
-  pickupEffect: {fileID: 8153862994146739200, guid: b9887f26624cc4ba4a894a04d9e32e3d, type: 3}
---- !u!58 &3914689980723617334
+  pickupEffect: {fileID: 3547176832304412658, guid: f852ae04831bb4377bbd6bf5f661c261, type: 3}
+--- !u!58 &2890458884735156963
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -135,17 +135,17 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.72, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!50 &4510572379458276388
+  m_Radius: 1.2
+--- !u!50 &2071667393207820951
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -165,14 +165,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &8293773558328539424
+--- !u!95 &6337140999519160814
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302837917819636923}
+  m_GameObject: {fileID: 7776984937495322682}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a8c8562b21db94d1a8863c028e5c9ec6, type: 2}

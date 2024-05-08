@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    public Transform playerSpawnPoint;
     public float playerHealth;
     public float playerScore;
     public float maxPlayerHealth;
-    
+    public GameObject player; 
     private void Awake(){
         DontDestroyOnLoad(this.gameObject);    
     }
@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         
+      player = GameObject.FindWithTag("Player");
+       playerSpawnPoint = GameObject.FindWithTag("Start").transform; 
     }
 
     // Update is called once per frame
@@ -32,5 +34,13 @@ public class GameManager : MonoBehaviour
     public void TakeDamage(float damage)
     {
         playerHealth -= damage;
+    }
+    
+    public void UpdateSpawnPoint(Transform newSpawnPoint) {
+        playerSpawnPoint = newSpawnPoint;
+    }
+
+    public void RespawnPlayer() {
+        player.transform.position = playerSpawnPoint.position;
     }
 }
